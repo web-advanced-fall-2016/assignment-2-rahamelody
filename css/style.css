@@ -1,0 +1,101 @@
+body {
+	margin: 0;
+	font-family: "Avenir";
+	text-align: center;
+	color: white;
+	background-color: black;
+}
+
+h1 {
+	font-size: 30px;
+	z-index: 1;
+}
+
+.bio {
+	margin-top: 50px;
+	width: 250px;
+	overflow: scroll;
+	margin-left: 30px;
+
+}
+
+.name {
+	margin-top: 30px;
+	font-size: 20px;
+	font-style: bold;
+}
+
+.wrapper {
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row wrap;
+}
+
+.studentwrapper {
+	border-radius: 100%;
+	width: 300px;
+	height: 300px;
+	margin: 50px;
+	overflow: hidden;
+
+}
+
+
+
+img {
+	width: 300px;
+	height: 300px;
+	border-radius: 100%;
+	z-index: -1;
+	transition: 0.5s;
+	border: 3px white solid;
+}
+
+
+
+.class__wave .icon {
+    bottom: -5px;
+    color: rgba(0, 205, 122, 0.8);
+    font-size: 120px;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
+    transition: left 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, right;
+}
+
+.icon {
+
+    speak: none;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    font-variant: normal normal;
+}
+
+.class__wave {
+    bottom: -100%;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    letter-spacing: 1.8px;
+    line-height: 20.16px;
+    padding-top: 50%;
+    text-transform: uppercase;
+    top: auto;
+    z-index: 3;
+    overflow: hidden;
+    transition: bottom 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.class__hover, .propic, .class__wave {
+    display: block;
+    
+ 
+    position: absolute;
+
+
+    border-radius: 50%;
+}
+
+
+
