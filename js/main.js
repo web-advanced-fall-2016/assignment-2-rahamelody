@@ -38,6 +38,7 @@
 
     wrapper.addEventListener('mouseover', function(evnt){
     	console.log("mouseover");
+    
     	$.ajax({
     		method: "GET",
     		url: baseURL+'/students/'+evnt.target.dataset.id+'/bio'
@@ -45,6 +46,21 @@
     		console.log(response)
     		let studentBios = wrapper.querySelector(`[data-id="${response.id}"`);
     		studentBios.querySelector('.bio').innerHTML = response.full_bio;
+
+    	});
+ 
+    });
+
+      wrapper.addEventListener('mouseout', function(evnt){
+    	console.log("mouseout");
+
+    	$.ajax({
+    		method: "GET",
+    		url: baseURL+'/students/'+evnt.target.dataset.id+'/bio'
+    	}).done(function(response){
+    		console.log(response)
+    		let studentBios = wrapper.querySelector(`[data-id="${response.id}"`);
+    		studentBios.querySelector('.bio').innerHTML = " ";
 
     	});
  
